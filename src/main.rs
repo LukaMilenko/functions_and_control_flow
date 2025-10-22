@@ -50,4 +50,18 @@ fn main() {
     println!("\nExercise 4:");
     println!("Suma parnih brojeva do 20 je: {}", sum_of_even(20));
     println!("\nExercise 5:");
+    for i in 1..=100{
+        if (i % 3) == 0 && (i % 5) == 0
+        {
+            println!("FizzBuzz");
+        }else if (i % 3) == 0
+        {
+            println!("Fizz");
+        }else if (i % 5) == 0
+        {
+            println!("Buzz");
+        }else {
+            println!("{}", i);
+        }
+    }
 }
