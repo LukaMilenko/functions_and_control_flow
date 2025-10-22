@@ -28,6 +28,11 @@ fn main() {
     println!("\nExercise 2:");
     println!("Max of three: {}", max_of_three(a, b, c));
     println!("\nExercise 3:");
+    for i in 1..=10 {
+        for j in 1..=10 {
+            println!("{} x {} = {}", i, j, i*j)
+        }
+    }
     println!("\nExercise 4:");
     println!("\nExercise 5:");
 }
