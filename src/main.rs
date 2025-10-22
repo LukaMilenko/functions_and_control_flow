@@ -16,6 +16,20 @@ fn max_of_three(a: i32, b: i32, c: i32) -> i32
     max
 }
 
+fn sum_of_even(n: u32) -> u32
+{
+    let mut sum: u32 = 0;
+    let mut i = 0;
+
+    while i <= n{
+        if (i % 2) == 0{
+            sum = sum + i;
+        }
+        i += 1;
+    }
+    sum
+}
+
 fn main() {
     let a = 5;
     let b = 15;
@@ -34,5 +48,6 @@ fn main() {
         }
     }
     println!("\nExercise 4:");
+    println!("Suma parnih brojeva do 20 je: {}", sum_of_even(20));
     println!("\nExercise 5:");
 }
